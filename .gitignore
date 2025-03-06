@@ -169,3 +169,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# API Key
+*.key
+
+# Generated JSON Data Files
+*json
