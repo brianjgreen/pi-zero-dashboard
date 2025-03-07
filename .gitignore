@@ -174,4 +174,4 @@ cython_debug/
 *.key
 
 # Generated JSON Data Files
-*json
+*.json
