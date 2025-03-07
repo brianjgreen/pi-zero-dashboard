@@ -1,6 +1,8 @@
 # pi-zero-dashboard
 Create an LED screen dashboard using a raspberry pi zero to display weather, air traffic, etc.
 
+See it in action! https://youtu.be/gYM97AqxEqI
+
 ## Setup
 
 >`git clone https://github.com/brianjgreen/pi-zero-dashboard.git`
