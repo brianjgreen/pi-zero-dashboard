@@ -3,6 +3,7 @@
 # https://www.worldweatheronline.com/weather-api/api/docs/local-city-town-weather-api.aspx
 #
 
+import datetime
 import json
 
 NUM_OF_DAYS = 3
@@ -30,6 +31,10 @@ for loc, addr in locations.items():
         if snow != "0.0":
             accum = float(snow) / 2.54
             conditions = f"Snow: {accum:.2f} in."
+        date_string = weather["date"]
+        date_object = datetime.datetime.strptime(date_string, "%Y-%m-%d").date()
+        day_of_week = date_object.strftime("%A")[:3]
+
         print(
-            f"{weather['mintempF']}{chr(176)}-{weather['maxtempF']}{chr(176)} {conditions}"
+            f"{day_of_week} {weather['mintempF']}{chr(176)}-{weather['maxtempF']}{chr(176)} {conditions}"
         )
