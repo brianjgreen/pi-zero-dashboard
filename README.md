@@ -6,6 +6,7 @@ See it in action! https://youtu.be/gYM97AqxEqI
 ## Setup
 
 ```bash
+sudo apt install git python3-dev libjpeg-dev zlib1g-dev i2c-tools libfreetype6-dev
 git clone https://github.com/brianjgreen/pi-zero-dashboard.git
 cd pi-zero-dashboard/
 python3 -m venv .venv
